@@ -1,0 +1,66 @@
+
+@import './src/mixin.scss';
+@import './src/assets/Jaapokki-Regular.otf';
+@import "../../mixin";
+
+@import url('https://fonts.googleapis.com/css?family=Signika:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
+
+.navigation {
+    max-width: 320px;
+    background-color: #ffffff;
+
+    .logo {
+        background-color: #242d3a;
+        padding: 25px 0px;
+
+        .logo__title {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            font: 400 40px/11px 'Signika', sans-serif;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+    }
+
+    .list-modules {
+        list-style: none;
+        margin: 0px;
+        padding: 55px 0px 10px 0px;
+        text-align: center;
+
+        .module {
+            padding: 17px 0px;
+            color: #bec1d0;
+            cursor: pointer;
+
+            &:hover {
+                color: #989aa6;
+            }
+        }
+
+        &:hover {
+            color: #000000;
+        }
+
+        .module__icons {
+            display: inline;
+            width: 24px;
+            height: 24px;
+
+            &.module__icons--main{
+                background-image: url('./src/assets/module-main.svg');
+            }
+        }
+
+        .module__name {
+            margin-left: 40px;
+            font: 400 21px/11px 'Lato', sans-serif;
+        }
+    }
+}
+
+
+
+
